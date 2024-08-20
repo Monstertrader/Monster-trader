@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Quiz</title>
+</head>
+<body>
+    <header>
+        <img src="jp3.png" alt="Trading Logo" class="logo">
+        <h1>Monster Trader platform</h1>
+    </header>
+    <div class="container">
+        <h2>Quiz</h2>
+        <form id="quizForm" onsubmit="submitQuiz(event)">
+            
+            <div class="question">
+                <img src="jp001.png" alt="Example image">
+                <p>Question 1: Is this a bearish pattern?</p>
+                <label>
+                    <input type="radio" name="q1" value="a" required> A. Yes
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="b" required> B. No
+                </label>
+                <div class="question">
+                    <img src="jp002.png" alt="Example image">
+                    <p>Question 2: where will the marker go?</p>
+                    <label>
+                        <input type="radio" name="q2" value="a" required> A. up
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="b" required> B. down
+                    </label>
+                    <div class="question">
+                        <img src="jp003.png" alt="Example image">
+                        <p>Question 3:what is the name of the pattarn?</p>
+                        <label>
+                            <input type="radio" name="q3" value="a" required> A. diamond
+                        </label>
+                        <label>
+                            <input type="radio" name="q3" value="b" required> B. ascending triangle
+                        </label>
+                        <div class="question">
+                            <img src="jp015.png" alt="Example image">
+                            <p>Question 4: Is this level a support or resistance?</p>
+                            <label>
+                                <input type="radio" name="q4" value="a" required> A.resistance
+                            </label>
+                            <label>
+                                <input type="radio" name="q4" value="b" required> B.support
+                            </label>
+                            <div class="question">
+                                <img src="jp006.jpg" alt="Example image">
+                                <p>Question 5: Is this a bullish pattern?</p>
+                                <label>
+                                    <input type="radio" name="q5" value="a" required> A. Yes
+                                </label>
+                                <label>
+                                    <input type="radio" name="q5" value="b" required> B. No
+                                </label>
+                                <div class="question">
+                                    <img src="jp019.png" alt="Example image">
+                                    <p>Question 6:What is the name of the pattern?</p>
+                                    <label>
+                                        <input type="radio" name="q6" value="a" required> A. head and shoulders
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="q6" value="b" required> B. head and bulls
+                                    </label>
+                                    <div class="question">
+                                        <img src="jp004.png" alt="Example image">
+                                        <p>Question 7:where will the market go</p>
+                                        <label>
+                                            <input type="radio" name="q7" value="a" required> A.down
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="q7" value="b" required> B.up
+                                        </label>
+                                        <div class="question">
+                                            <img src="jp005.jpg" alt="Example image">
+                                            <p>Question 8: Is this a bearish pattern?</p>
+                                            <label>
+                                                <input type="radio" name="q8" value="a" required> A. Yes
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="q8" value="b" required> B. No
+                                            </label>
+                                            <div class="question">
+                                                <img src="jp007.jpg" alt="Example image">
+                                                <p>Question 9: what is the name of the  pattern?</p>
+                                                <label>
+                                                    <input type="radio" name="q9" value="a" required> A. dragonfly
+                                                </label>
+                                                <label>
+                                                    <input type="radio" name="q9" value="b" required> B. piercing line
+                                                </label>
+                                                <div class="question">
+                                                    <img src="jp008.jpg" alt="Example image">
+                                                    <p>Question 10: Is this a bearish pattern?</p>
+                                                    <label>
+                                                        <input type="radio" name="q10" value="a" required> A. Yes
+                                                    </label>
+                                                    <label>
+                                                        <input type="radio" name="q10" value="b" required> B. No
+                                                    </label>
+                                                    <div class="question">
+                                                        <img src="jp009.jpg" alt="Example image">
+                                                        <p>Question 11: Is this a bearish pattern?</p>
+                                                        <label>
+                                                            <input type="radio" name="q11" value="a" required> A. Yes
+                                                        </label>
+                                                        <label>
+                                                            <input type="radio" name="q11" value="b" required> B. No
+                                                        </label><div class="question">
+                                                            <img src="jp010.jpg" alt="Example image">
+                                                            <p>Question 12: what is the name of the pattern?</p>
+                                                            <label>
+                                                                <input type="radio" name="q12" value="a" required> A. three white soldiers
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" name="q12" value="b" required> B. three bears
+                                                            </label>
+                                                            <div class="question">
+                                                                <img src="jp011.jpg" alt="Example image">
+                                                                <p>Question 13: if this appear in a chart where will the market go?</p>
+                                                                <label>
+                                                                    <input type="radio" name="q13" value="a" required> A. up
+                                                                </label>
+                                                                <label>
+                                                                    <input type="radio" name="q13" value="b" required> B. down
+                                                                </label>
+                                                                <div class="question">
+                                                                    <img src="jp012.png" alt="Example image">
+                                                                    <p>Question 14: Is this bullish engulfing?</p>
+                                                                    <label>
+                                                                        <input type="radio" name="q14" value="a" required> A. Yes
+                                                                    </label>
+                                                                    <label>
+                                                                        <input type="radio" name="q14" value="b" required> B. No
+                                                                    </label>
+                                                                    <div class="question">
+                                                                        <img src="jp016.png" alt="Example image">
+                                                                        <p>Question 15: where will the market go ?</p> 
+                                                                        <label>
+                                                                            <input type="radio" name="q15" value="a" required> A. up 
+                                                                        </label>
+                                                                        <label>
+                                                                            <input type="radio" name="q15" value="b" required> B. down
+                                                                        </label>
+                                                                        <div class="question">
+                                                                            <img src="jp020.jpg" alt="Example image">
+                                                                            <p>Question 16: Is this a three inside down?</p>
+                                                                            <label>
+                                                                                <input type="radio" name="q16" value="a" required> A. Yes
+                                                                            </label>
+                                                                            <label>
+                                                                                <input type="radio" name="q16" value="b" required> B. No
+                                                                            </label>
+                                                                            <div class="question">
+                                                                                <img src="jp017.jpg" alt="Example image">
+                                                                                <p>Question 17: what is the name of the pattan?</p>
+                                                                                <label>
+                                                                                    <input type="radio" name="q17" value="a" required> A. doji
+                                                                                </label>
+                                                                                <label>
+                                                                                    <input type="radio" name="q17" value="b" required> B. dark cloud cover
+                                                                                </label>
+                                                                                <div class="question">
+                                                                                    <img src="jp018.jpg" alt="Example image">
+                                                                                    <p>Question 18: Is this a bearish candlestick?</p>
+                                                                                    <label>
+                                                                                        <input type="radio" name="q18" value="a" required> A. Yes
+                                                                                    </label>
+                                                                                    <label>
+                                                                                        <input type="radio" name="q18" value="b" required> B. No
+                                                                                    </label>
+                                                                                    <div class="question">
+                                                                                        <img src="jp015.png" alt="Example image">
+                                                                                        <p>Question 19: if a chart het resistans level what will happend?</p>
+                                                                                        <label>
+                                                                                            <input type="radio" name="q19" value="a" required> A. it will go down 
+                                                                                        </label>
+                                                                                        <label>
+                                                                                            <input type="radio" name="q19" value="b" required> B. it will go up
+                                                                                        </label>
+                                                                                        <div class="question">
+                                                                                            <img src="jp003.png" alt="Example image">
+                                                                                            <p>Question 20: where will the market go?</p>
+                                                                                            <label>
+                                                                                                <input type="radio" name="q20" value="a" required> A. up
+                                                                                            </label>
+                                                                                            <label>
+                                                                                                <input type="radio" name="q20" value="b" required> B. down
+                                                                                            </label>
+
+            </div>
+            
+            <button type="submit">Submit</button>
+        </form>
+        <div id="results"></div>
+    </div>
+</body>
+</html>
+

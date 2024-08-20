@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #00080f;
+    color: white;
+}
+
+.logo {
+    height: 70px;
+    margin-right: 70px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #00070e;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00080f;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.question img {
+    width: 35%;
+    height: auto;
+}
+
+.question p {
+    margin-bottom: 10px;
+}
+
+.instructions {
+    margin-top: 20px;
+}
+
+.signal-form {
+    margin-top: 20px;
+}
+
+#results {
+    margin-top: 20px;
+    font-weight: bold;
+}
